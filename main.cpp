@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip> // Include the <iomanip> header for formatting
 
 using namespace std;
 
@@ -28,6 +29,6 @@ void averages(int subjects)
         result += subject;
     }
 
-    int finalScore = result / subjects;
-    cout << "Nilai rata rata mu adalah : " << finalScore << endl;
+    double finalScore = static_cast<double>(result) / subjects; // Use double for floating-point division
+    cout << "Nilai rata rata mu adalah : " << fixed << setprecision(1) << finalScore << endl;
 }
