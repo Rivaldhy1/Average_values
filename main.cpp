@@ -30,5 +30,5 @@ void averages(int subjects)
     }
 
     double finalScore = static_cast<double>(result) / subjects;
-    cout << "Nilai rata rata mu adalah : " << fixed << setprecision(1) << finalScore << endl;
+    cout << "Nilai rata rata mu adalah : " << fixed << setprecision(2) << finalScore << endl;
 }
